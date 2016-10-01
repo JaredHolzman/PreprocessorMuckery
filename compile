@@ -1,0 +1,3 @@
+#!/bin/bash
+gcc confused.c -o order.exe
+./order.exe
