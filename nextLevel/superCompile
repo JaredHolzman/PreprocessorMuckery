@@ -1,0 +1,3 @@
+#!/bin/bash
+gcc superConfused.c -o superConfused.exe
+./superConfused.exe
