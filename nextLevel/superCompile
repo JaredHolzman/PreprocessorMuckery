@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc superConfused.c -o superConfused.exe
-./superConfused.exe
+gcc ${BASH_SOURCE%/*}/superConfused.c -o ${BASH_SOURCE%/*}/superConfused.exe
+${BASH_SOURCE%/*}/superConfused.exe

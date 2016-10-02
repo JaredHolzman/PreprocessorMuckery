@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc confused.c -o confused.exe
-./confused.exe
+gcc ${BASH_SOURCE%/*}/confused.c -o ${BASH_SOURCE%/*}/confused.exe
+./${BASH_SOURCE%/*}/confused.exe
