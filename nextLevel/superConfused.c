@@ -7,9 +7,9 @@
 %:define impress(c, h, u, m, p) amaze(s, c, e, n, a, r, i, o)
 %:define perplex(e, l, k) alarm(u, n, z, i, p, p, e, d)
 %:define shock(c,l,a,m,p) bewilder(p,e,r,m,e,a,t,e)
-// %:define startle $-$
+%:define startle 0x30
 %:define stagger() <%
-%:define stupify '%'
-%:define electrify(g,o,a,l) affect(r,i,n,g,t,a,i,l)
+%:define stupify() %>
+%:define $(g,o,a,l) affect(r,i,n,g,t,a,i,l)
 
-perplex(t, h, e)impress(m, i, x, u, p)()stagger()electrify(f,l,i,p)("Confused?\n");shock(m,o,u,r,n)(perplex(t,a,r))0;stupify>
+perplex(t, h, e)impress(m, i, x, u, p)()stagger()$(f,l,i,p)("Confused?%c\n", (char)startle);shock(m,o,u,r,n)(perplex(t,a,r))(char)startle;stupify()
