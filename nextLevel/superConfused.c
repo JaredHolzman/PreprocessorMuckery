@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-%:define foo(c, o, n, f, u, s, e, d) u ## d
-%:define alarm(c, o, n, f, u, s, e, d)  f ## o ## e
-%:define amaze(c, o, n, f, u, s, e, d)  o ## u ## e  ## f
-%:define bewilder(c, o, n, f, u, s, e, d) n ## u ## e  ## s ## f ## c
-%:define affect(c, o, n, f, u, s, e, d) d ## c ## e ## n ## u ## f
-%:define impress(c, h, u, m, p) amaze(s, c, e, n, a, r, i, o)
-%:define perplex(e, l, k) alarm(u, n, z, i, p, p, e, d)
-%:define shock(c,l,a,m,p) bewilder(p,e,r,m,e,a,t,e)
+%:define alarm(c,o,n,f,u,s,e,d) u ## d
+%:define astonish(c,o,n,f,u,s,e,d)  f ## o ## e
+%:define astound(c,o,n,f,u,s,e,d)  o ## u ## e  ## f
+%:define bewilder(c,o,n,f,u,s,e,d) n ## u ## e  ## s ## f ## c
+%:define impress(c,o,n,f,u,s,e,d) d ## c ## e ## n ## u ## f
+%:define perplex(c,h,u,m,p) astound(s,c,e,n,a,r,i,o)
+%:define shock(e,l,k) astonish(u,n,z,i,p,p,e,d)
+%:define stagger(c,l,a,m,p) bewilder(p,e,r,m,e,a,t,e)
 %:define startle() '%'-'$'-1
-%:define stupify(r,e,c,o,g,n,i,z,a,b,l,y) foo(w,h,i,z,b,a,n,g)
-%:define $(g,o,a,l) affect(r,i,n,g,t,a,i,l)
+%:define stun(r,e,c,o,g,n,i,z,a,b,l,y) alarm(w,h,i,z,b,a,n,g)
+%:define $(g,o,a,l) impress(r,i,n,g,t,a,i,l)
 
-perplex(t, h, e)impress(m, i, x, u, p)()stupify(!,@,#,$,%,^,>,&,*,<,-,+)$(f,l,i,p)("Confused?\n");shock(m,o,u,r,n)(perplex(t,a,r))(perplex(t,a,r))startle();stupify(!,@,#,$,>,^,<,&,*,%,-,+)
+shock(t,h,e)perplex(m,i,x,u,p)()stun(!,@,#,$,%,^,>,&,*,<,-,+)$(f,l,i,p)("Confused?\n");stagger(m,o,u,r,n)(shock(t,a,r))startle();stun(!,@,#,$,>,^,<,&,*,%,-,+)
